@@ -8,8 +8,6 @@ updates:
   - package-ecosystem: 'maven'
     target-branch: 'develop'
     directory: '/'
-    schedule:
-      interval: 1h
     open-pull-requests-automatically: true
     allow-prerelease-updates: true
     version-updates:
@@ -17,5 +15,5 @@ updates:
         dependency-name: 'spring-boot-starter-parent'
         maven-central-group-id: 'org.springframework.boot'
         maven-central-artifact-id: 'spring-boot-starter-parent'
-        maven-central-version: '>=3.0.8'
-        monitor-release-tags: true
+        maven-central-version: '>3.0.8'
+        monitor-release-tags: ['major']
